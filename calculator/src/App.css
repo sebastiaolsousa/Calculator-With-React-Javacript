@@ -1,9 +1,25 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightslategray;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
 }
 
 .keyboard {
@@ -25,9 +41,10 @@
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 90%;
   height: 40px;
   font-size: 20px;
   padding: 5px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
 }
